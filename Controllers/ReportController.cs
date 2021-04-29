@@ -70,5 +70,10 @@ namespace SMS.Controllers
             return View(lstData);
 
         }
+        public IActionResult Find()
+        {
+            return View();
+        }
+
     }
 }

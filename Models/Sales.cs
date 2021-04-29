@@ -15,8 +15,8 @@ namespace StockManagementSystem.Models
         
 
         public DateTime SalesDate { get; set; }
-        public int BillNo { get; set; }
-        public long Remarks { get; set; }
+        public string BillNo { get; set; }
+        public string Remarks { get; set; }
         public int CustomerID { get; set; }
         [ForeignKey("CustomerID")]
         public List<SalesDetail> SalesDetails { get; set; }

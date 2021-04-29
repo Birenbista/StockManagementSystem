@@ -25,6 +25,11 @@ namespace SMS.Controllers
             return View(await _context.Purchase.ToListAsync());
         }
 
+        public async Task<IActionResult> Find()
+        {
+            return View();
+        }
+
         // GET: Purchases/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -199,3 +199,4 @@ G:\SMS\obj\Debug\netcoreapp3.1\Razor\Views\PurchaseDetails\Edit.cshtml.g.cs
 G:\SMS\obj\Debug\netcoreapp3.1\Razor\Views\PurchaseDetails\Index.cshtml.g.cs
 G:\SMS\obj\Debug\netcoreapp3.1\Razor\Views\Report\StockListReport.cshtml.g.cs
 G:\SMS\obj\Debug\netcoreapp3.1\Razor\Views\Sales\CustomerSales.cshtml.g.cs
+G:\SMS\obj\Debug\netcoreapp3.1\Razor\Views\CustomerSales\CustomerPurchase.cshtml.g.cs

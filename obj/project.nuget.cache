@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4pvaKW+LeCfxXDyQ00/v3on4dWqDnZBv+jI2U7geqs66cMOahjGsVZvc9kK19nTCsO0E+521Qdua4DEyG00NBQ==",
+  "dgSpecHash": "3UPjegRjlKxv/tzFxmOO1nJyqVYOakWze71NZMrmBcDU2Vk8k5yHPTBZO1hvNYfvOQ7uykea5vewYgKjl0KBog==",
   "success": true,
   "projectFilePath": "G:\\SMS\\SMS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Y720\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
     "C:\\Users\\Y720\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.12\\microsoft.aspnetcore.cryptography.internal.3.1.12.nupkg.sha512",
     "C:\\Users\\Y720\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.12\\microsoft.aspnetcore.cryptography.keyderivation.3.1.12.nupkg.sha512",
     "C:\\Users\\Y720\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.12\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.12.nupkg.sha512",

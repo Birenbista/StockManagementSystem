@@ -61,14 +61,24 @@ namespace SMS.Controllers
         {
             if (ModelState.IsValid)
             {
-                var ProductID = _context.Product.Where(p => p.CategoryID==product.CategoryID).ToList();
-                Stock stock = new Stock();
-                //int ProductID = product.ProductID;
-                //var Quantity = _context.Stock.Where(p => p.ProductID == ProductID);
+                
                 _context.Add(product);
+
+
                 await _context.SaveChangesAsync();
+
+                Product products = _context.Product.Where(p => p.Name == product.Name).FirstOrDefault();
+                Stock stock = new Stock();
+                stock.ProductID = products.ProductID;
+                stock.Quantity = 0;
+                //stock.StockID = 0;
+                 _context.Stock.Add(stock);
+                await _context.SaveChangesAsync();
+
+
                 return RedirectToAction(nameof(Index));
             }
+            
             ViewData["CategoryID"] = new SelectList(_context.Category, "CategoryID", "CategoryID", product.CategoryID);
             return View(product);
         }

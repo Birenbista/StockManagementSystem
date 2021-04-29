@@ -1,0 +1,79 @@
+﻿@model IEnumerable<SMS.ViewModel.CustomerPurchase>
+
+@{
+    ViewData["Title"] = " Purchase Details";
+}
+
+<h1>Customer Purchase Details</h1>
+
+<form asp-action="CustomerPurchase" method="GET" style="width:500px">
+    <div class="row input-group">
+        <input type="text" name="customer" placeholder="Search by Customer Name or Customer ID" class="form-control" />
+        <div class="input-group-btn" style="padding-left:20px">
+            @*<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Search</button>*@
+            <input type="submit" value="Search" class="btn-outline-secondary" style="height:40px; border-radius:3px; width:100px;" />
+            @*<input type="submit" value="Find" formaction="@Url.Action("Find")" formmethod="get" class="btn" />*@
+        </div>
+
+    </div>
+</form>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseDate)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillNo)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            @*<td>
+            <a href="/Products/Details/@item.ProductId">View Detail</a>
+        </td>*@
+        </tr>
+        }
+    </tbody>
+</table>
+
